@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family:'Rubik', sans-serif;
+    background-image: url(travel\ two.jpg);
+    color: #fff;
+    line-height: 1.4;
+    font-weight: 400;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #00000087;
+}
+/* Start header*/
+header {
+    margin: 2.5rem auto 1rem auto;
+    text-align: center;
+}
+
+header .title {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+/* Start form / fieldset*/
+
+form {
+    width: 70%;
+    height: 100%;
+    margin: 1.125rem auto 0 auto;
+    padding: 1.5rem 0.740rem;
+    background: #05121cdb;
+}
+
+fieldset {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+fieldset:not(:first-child) {
+    margin-top: .6rem;
+}
+
+ legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Start Personal-Details*/
+.personal_details label{
+    display: block;
+}
+
+.personal_details > label{
+    margin-bottom: .9rem;
+}
+
+.personal_details span{
+    margin-bottom: .1rem;
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 1.5rem;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+input[type="radio"] {
+    margin: .5rem;
+   
+}
+
+.personal_details label:last-child {
+    margin-top: 1.1rem;
+}
+
+.personal_details label:last-child input[type="date"] {
+    padding: 0.25rem;
+}
+
+
+/* Start Travel-Details*/
+

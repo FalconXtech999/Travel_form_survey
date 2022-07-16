@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1 class="title">Western Travel Survey</h1>
+            <p>We make your dream a reality, luxury's, and affordable...</p>
+        </header>
+      <form action="" autocomplete="on">        
+        <fieldset class="personal_details">
+            <legend>Personal Details</legend>
+            <label for="fname"><span>Name:</span>
+                <input type="text" name="f_name" id="fname" placeholder="enter full name " required>
+            </label>
+
+            <label for="address"><span>Address:</span>
+                <input type="text" name="u_address" id="address" placeholder="Street, City, State ..." required>
+            </label>
+
+            <label for="country"><span>Country:</span>
+                <input type="text" name="u_country" id="country" placeholder="" required>
+            </label>
+
+            <label for="pcode"><span>Postal Code:</span>
+                <input type="text" name="p_code" id="pcode" placeholder="" required>
+            </label>
+
+            <label for="u-email"><span>Email:</span>
+                <input type="email" name="u_email" id="u-email" placeholder="" required>
+            </label>
+
+            <label for="phone"><span>Phone:</span>
+                <input type="text" name="u_phone" id="phone" placeholder="" required>
+            </label>
+
+            <label for="gender"><span>Gender:</span>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </label>
+
+             <label for="dob"><span>Date of birth:</span>
+                <input type="date" name="u_dob" id="dob" placeholder="" required>
+            </label>
+        </fieldset>
+
+
+        <fieldset class="travel-details">
+            <legend>Travel Details</legend>
+           <div class="travel_box">
+                <label for="c-country">
+                    <select name="country" id="c-country">
+                        <option value="" disabled selected>~ choose country ~</option>
+                        <option value="1">Benin</option>
+                        <option value="2">Burkina Faso</option>
+                        <option value="3">Cape Verde</option>
+                        <option value="4">Côte D'Ivoire</option>
+                        <option value="5">Gambia</option>
+                        <option value="6">Ghana</option>
+                        <option value="7">Guinea</option>
+                        <option value="8">Guinea-Bissau</option>
+                        <option value="9">Liberia</option>
+                        <option value="10">Mali</option>
+                        <option value="11">Mauritania</option>
+                        <option value="12">Niger</option>
+                        <option value="13">Nigeria</option>
+                        <option value="14">Senegal</option>
+                        <option value="15">Sierra</option>
+                        <option value="16">Leone</option>
+                        <option value="17">Togo</option>
+                    </select>
+                    <span>Current country:</span> 
+                </label>
+
+                <label for="s-country">
+                    <select name="country" id="s-country">
+                        <option value="" disabled selected>~ choose country ~</option>
+                        <option value="1">Benin</option>
+                        <option value="2">Burkina Faso</option>
+                        <option value="3">Cape Verde</option>
+                        <option value="4">Côte D'Ivoire</option>
+                        <option value="5">Gambia</option>
+                        <option value="6">Ghana</option>
+                        <option value="7">Guinea</option>
+                        <option value="8">Guinea-Bissau</option>
+                        <option value="9">Liberia</option>
+                        <option value="10">Mali</option>
+                        <option value="11">Mauritania</option>
+                        <option value="12">Niger</option>
+                        <option value="13">Nigeria</option>
+                        <option value="14">Senegal</option>
+                        <option value="15">Sierra</option>
+                        <option value="16">Leone</option>
+                        <option value="17">Togo</option>
+                    </select>
+                    <span>Traveling to:</span> 
+                </label>
+
+                <label for="u-purpose">
+                    <select name="purpose" id="u-purpose">
+                        <option value="" disabled selected>~ choose purpose ~</option>
+                        <option value="tourist">Tourist</option>
+                        <option value="business">Business</option>
+                        <option value="working-holiday">Working Holiday</option>
+                        <option value="work-visa">Work Visas and Permit</option>
+                    </select>
+                </label>
+                <span>Purpose of Visit:</span>
+           </div>
+
+           <div class="members">
+            <label for="adult"><span>Adult (+18): </span>
+                <select name="u-adult" id="adult">
+                    <option value="" disabled selected> </option>
+                    <option value="1e">1</option>
+                    <option value="2e">2</option>
+                    <option value="3e">3</option>
+                    <option value="4e">4</option>
+                    <option value="5e">5</option>
+                    <option value="6e">6</option>
+                    <option value="7e">7</option>
+                    <option value="8e">8</option>
+                    <option value="9e">more...</option>
+                </select>
+            </label>
+    
+            
+    
+            <label for="children"><span>Children (0-17): </span>
+                <select name="u-children" id="children">
+                    <option value="" disabled selected> </option>
+                    <option value="1e">1</option>
+                    <option value="2e">2</option>
+                    <option value="3e">3</option>
+                    <option value="4e">4</option>
+                    <option value="5e">5</option>
+                    <option value="6e">6</option>
+                    <option value="7e">7</option>
+                    <option value="8e">8</option>
+                    <option value="9e">more...</option>
+                </select>
+            </label>
+                
+            <label for="duration"><span>Stay Duration: </span>
+                <select name="u-duration" id="duration">
+                    <option value="" disabled selected> </option>
+                    <option value="1f">Days</option>
+                    <option value="2f">Weeks</option>
+                    <option value="3f">months</option>
+                    <option value="4f">Years</option>
+                    <option value="5f">Permanent</option>
+                </select>
+            </label> 
+           </div>
+
+        
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="education"><span>Educational Background: </span>
+                <select id="education" name="u-education">
+                    <option value="" disabled selected> </option>
+                    <option value="1g">High school</option>
+                    <option value="2g">occupational certificate</option>
+                    <option value="3g">Bachelor's degree</option>
+                    <option value="4g">Master's degree</option>
+                    <option value="5g">Doctorate</option>
+                    <option value="6g">Professional</option>
+                </select>
+            </label>
+             
+
+            <label for="status"><span>Marital Status:</span> 
+                <select id="status" name="u-status">
+                    <option value="" disabled selected> </option>
+                    <option value="1i">Single</option>
+                    <option value="2i">Engaged</option>
+                    <option value="3i">Married</option>
+                    <option value="4i">Separated</option>
+                    <option value="5i">Divorced</option>
+                </select>
+            </label>
+        
+
+            <label for="occupation"><span>Occupation: </span>
+                <select id="occupation" name="u-occupation">
+                    <option value="" disabled selected> </option>
+                    <option value="1i">Student</option>
+                    <option value="2i">Employment</option>
+                    <option value="3i">Profession</option>
+                    <option value="4i">Business</option>
+                </select>
+            </label>
+
+            <label for="documents"><span>Please indicate your available document by checking the boxes</span>
+                <input type="checkbox" name="doc1"><span>Passport, Travel Visa and National ID Card.</span>
+                <input type="checkbox" name="doc2"><span>COVID-19 Travel Documents. </span> 
+                <input type="checkbox" name="doc3"><span>Medical and Travel Insurance Proof.</span>
+                <input type="checkbox" name="doc3"><span>Driver’s License.</span>
+                <input type="checkbox" name="doc4"><span>Copies of All Identification Documents.</span>
+                <input type="checkbox" name="doc5"><span>Travel Insurance Plan Details.</span>
+                <input type="checkbox" name="doc6"><span>Travel Itinerary Details.</span>
+            </label>           
+
+            <label for="upload">
+                <span>Upload available document</span><input type="file" multiple id="upload" name="u-upload"></label>
+        </fieldset>  
+
+        <fieldset>
+            <div class="acknowledge">
+                <h2>ACKNOWLEDGEMENT AND AUTHORIZATION</h2>
+                <label for="ack1">
+                    <input type="checkbox" name="ack_1" id="ack1"><span> I understand that, should this application contain any false or misleading information, my application may be rejected or my employment with this company terminated</span>
+                </label>
+
+
+                <label for="ack2">
+                    <input type="checkbox" name="ack_2" id="ack2"><span> I certify that all answers and statements on this application are true and complete to the best of my knowledge.</span>
+                </label>
+
+                <label for="ack3">
+                    <input type="checkbox" name="ack_3" id="ack3"><span> I authorize the investigation of all statement contained in this application for employment as may be necessary in arriving an employment decision</span>
+                </label> 
+            </div>
+
+
+        </fieldset>
+
+        <label for="a&t">
+            <input type="checkbox" name="_a&t" id="a&t"><span>I agree to <a href="#">terms and condition</a></span>
+        </label>
+
+        <input type="submit" value="Submit">
+
+
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
